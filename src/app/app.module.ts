@@ -8,6 +8,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { CoreModule } from './core/core.module';
+import { GlobalModule } from './global/global.module';
+import { ComponentsModule } from './components/components.module';
 
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -28,7 +31,10 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }
-    })
+    }),
+    CoreModule,
+    GlobalModule,
+    ComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
