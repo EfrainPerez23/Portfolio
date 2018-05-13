@@ -46,7 +46,7 @@ export class HeaderComponent implements OnInit {
       // loop
       loop: true,
       // false = infinite
-      loopCount: 5,
+      loopCount: false,
       // show cursor
       showCursor: false,
       // character for cursor
