@@ -18,6 +18,8 @@ export class NavComponent implements OnInit {
     this.coreService.getLanguageChanged().next();
   }
 
-  public ngOnInit(): void { }
+  public ngOnInit(): void {
+    this.coreService.getLanguageChanged().next();
+  }
 
 }

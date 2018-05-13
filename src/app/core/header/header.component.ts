@@ -15,17 +15,11 @@ export class HeaderComponent implements OnInit {
 
   public typed: any;
   private _name = 'Efraín Abdiel Pérez Gómez';
-  private titles: string[] = [];
+  private titles: string[] = ['', '', '', ''];
 
   public constructor(private coreService: CoreService, private translateService: TranslateService) {
-    this.titles = [
-      'Software Developer Junior',
-      'Machine Learning and Artificial Intelligence Lover!',
-      'System and Computing Engineer Student',
-      'I am from Panama  <i class="em em-flag-pa"></i> !'
-    ];
     this.coreService.getLanguageChanged().subscribe((): void => {
-      this.translateService.get(['TITLE', 'MACHINE_LEARNING', 'STUDENT']).subscribe((texts: Profile): void => {
+      this.translateService.get(['TITLE', 'MACHINE_LEARNING', 'STUDENT', 'PANAMANIAN']).subscribe((texts: Profile): void => {
         this.titles = _.values(texts);
         this.typed.strings = this.titles;
         this.typed.reset();
