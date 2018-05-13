@@ -21,7 +21,8 @@ export class HeaderComponent implements OnInit {
     this.titles = [
       'Software Developer Junior',
       'Machine Learning and Artificial Intelligence Lover!',
-      'System and Computing Engineer Student'
+      'System and Computing Engineer Student',
+      'I am from Panama  <i class="em em-flag-pa"></i> !'
     ];
     this.coreService.getLanguageChanged().subscribe((): void => {
       this.translateService.get(['TITLE', 'MACHINE_LEARNING', 'STUDENT']).subscribe((texts: Profile): void => {
