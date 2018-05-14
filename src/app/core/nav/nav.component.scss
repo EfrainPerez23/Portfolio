@@ -1,0 +1,15 @@
+@import '../../../assets/scss/colors';
+
+nav {
+  background: transparent;
+  .collapse {
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          color: $white;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

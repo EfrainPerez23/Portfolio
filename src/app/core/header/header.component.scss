@@ -1,0 +1,76 @@
+@import '../../../assets/scss/colors';
+$line-height: 1.3;
+$font-size-name: 5.2em;
+$font-size-title: 1.9em;
+$shadow: 3px 7px 20px $text-shadow;
+header {
+  height: 100vh;
+  background: url('../../../assets/img/panama__wallpaper.jpg') no-repeat center center fixed;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  .info {
+    text-align: center;
+    padding: 30% 15%;
+    color: $white;
+    text-shadow: $shadow;
+    .info--name {
+      line-height: $line-height;
+      font-size: $font-size-name;
+    }
+    .info--title {
+      margin-top: 36px;
+      font-size: 2em;
+      /*Add custom cursor so it auto inherits font styles*/
+      .typed {
+        &::after {
+          content: '|';
+          display: inline;
+          -webkit-animation: blink 0.7s infinite;
+          -moz-animation: blink 0.7s infinite;
+          animation: blink 0.7s infinite;
+        }
+        /*Removes cursor that comes with typed.js*/
+        .typed-cursor {
+          opacity: 0;
+          display: none;
+        }
+        /*Custom cursor animation*/
+        @keyframes blink {
+          0% {
+            opacity: 1;
+          }
+          50% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+        @-webkit-keyframes blink {
+          0% {
+            opacity: 1;
+          }
+          50% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+        @-moz-keyframes blink {
+          0% {
+            opacity: 1;
+          }
+          50% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
