@@ -1,0 +1,46 @@
+@import '../../../../assets/scss/colors';
+$box: 0 12px 20px -10px rgba(0, 0, 0, 0.28),
+0 4px 20px 0px rgba(0, 0, 0, 0.12),
+0 7px 8px -5px rgba(255, 152, 0, 0.2);
+.col-md-4 {
+  display: inline-block;
+  .card {
+    border: none;
+    margin: auto;
+    margin-top: 44px;
+    width: 18rem;
+    border-radius: 6px;
+    box-shadow: $box;
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+    img {
+      margin: -20px 0px 0;
+      width: 90%;
+      position: relative;
+      box-shadow: $box;
+      text-align: center;
+      border-radius: 3px;
+      left: 13px;
+      background: $white;
+    }
+    .card-body {
+      .card-title {
+        color: $title;
+      }
+    }
+    @keyframes float {
+      0% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+      }
+      50% {
+        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+        transform: translatey(-20px);
+      }
+      100% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+      }
+    }
+  }
+}

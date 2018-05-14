@@ -2,5 +2,11 @@
     "TITLE": "Desarrollador de Software",
     "MACHINE_LEARNING": "Amante al aprendizaje máquina y a la Inteligencia Artificial",
     "STUDENT": "Estudiante de Ingenería de Sistemas y Computación",
-    "PANAMANIAN": "¡ Panameño <i class=\"em em-flag-pa\"></i> !"
+    "PANAMANIAN": "¡ Panameño <i class=\"em em-flag-pa\"></i> !",
+    "INTEREST": "Interés",
+    "ANGULAR_DESC": "Framework para aplicaciones web desarrollado en TypeScript, de código abierto, mantenido por Google, que se utiliza para crear y mantener aplicaciones web de una sola página.",
+    "SASS_DESC": "Sass es un metalenguaje de Hojas de Estilo en Cascada (CSS). Es un lenguaje de script que es traducido a CSS.",
+    "FLASK_DESC": "Framework minimalista (BACK-END) escrito en Python que permite crear aplicaciones web rápidamente y con un mínimo número de líneas de código.",
+    "ML_DESC": "Subcampo de las ciencias de la computación y una rama de la inteligencia artificial cuyo objetivo es desarrollar técnicas que permitan a las computadoras aprender",
+    "SWIFT_DESC": "Swift es un intuitivo lenguaje de programación creado por Apple que permite diseñar apps para iOS, Mac, el Apple TV y el Apple Watch."
 }
