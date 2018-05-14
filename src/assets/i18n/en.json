@@ -8,5 +8,6 @@
   "SASS_DESC": "Sass is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS).",
   "FLASK_DESC": "Flask is a micro web framework (BACK-END) written in Python and based on the Werkzeug toolkit and Jinja2 template engine.",
   "ML_DESC": "Machine learning is a field of computer science that uses statistical techniques to give computer systems the ability to \"learn\" with data, without being explicitly programmed",
-  "SWIFT_DESC": "Swift is a robust and intuitive programming language created by Apple for building apps for iOS, Mac, Apple TV, and Apple Watch."
+  "SWIFT_DESC": "Swift is a robust and intuitive programming language created by Apple for building apps for iOS, Mac, Apple TV, and Apple Watch.",
+  "HOME": "Home"
 }

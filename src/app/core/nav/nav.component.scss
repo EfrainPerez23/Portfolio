@@ -1,13 +1,22 @@
 @import '../../../assets/scss/colors';
-
 nav {
-  background: transparent;
+  transition: 500ms ease;
+  &.navbar-transparent {
+    background: transparent;
+  }
+  &.navbar-scrolled {
+    background: #1c0546bd;
+  }
   .collapse {
     .navbar-nav {
       .nav-item {
+        transition: 500ms ease;
         .nav-link {
           color: $white;
           cursor: pointer;
+        }
+        &:hover {
+          background: #ffffff1c;
         }
       }
     }
