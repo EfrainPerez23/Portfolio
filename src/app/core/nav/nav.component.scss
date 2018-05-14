@@ -5,7 +5,16 @@ nav {
     background: transparent;
   }
   &.navbar-scrolled {
-    background: #1c0546bd;
+    background: $purple-opacity;
+  }
+  .navbar-brand {
+    color: $white;
+    padding: 5px 15px;
+    transition: 500ms ease;
+    cursor: pointer;
+    &:hover {
+      background: #ffffff1c;
+    }
   }
   .collapse {
     .navbar-nav {

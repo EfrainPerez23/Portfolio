@@ -1,5 +1,5 @@
-<nav class="navbar fixed-top navbar-overlay navbar-inverse navbar-expand-lg" [ngClass]="{'navbar-scrolled' : scrolled}">
-  <a class="navbar-brand" href="#">Navbar</a>
+<nav class="navbar fixed-top navbar-overlay navbar-dark navbar-expand-lg" [ngClass]="{'navbar-scrolled' : scrolled}">
+  <a class="navbar-brand" (click)="onScroll('#header')">Efraín Pérez</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
     aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -12,13 +12,20 @@
         </a>
       </li>
       <li class="nav-item">
-          <a class="nav-link" (click)="onScroll('#interest')">{{'INTEREST' | translate}}</a>
-        </li>
-      <li class="nav-item">
-        <a class="nav-link" (click)="switchLanguage('es')">Español</a>
+        <a class="nav-link" (click)="onScroll('#interest')">{{'INTEREST' | translate}}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" (click)="switchLanguage('en')">English</a>
+        <a class="nav-link" (click)="onScroll('#skills')">{{'SKILLS' | translate}}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="switchLanguage('es')">Español
+          <i class="em em-flag-ea"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="switchLanguage('en')">English
+          <i class="em em-flag-um"></i>
+        </a>
       </li>
     </ul>
   </div>

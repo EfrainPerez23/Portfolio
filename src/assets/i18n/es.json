@@ -9,5 +9,6 @@
     "FLASK_DESC": "Framework minimalista (BACK-END) escrito en Python que permite crear aplicaciones web rápidamente y con un mínimo número de líneas de código.",
     "ML_DESC": "Subcampo de las ciencias de la computación y una rama de la inteligencia artificial cuyo objetivo es desarrollar técnicas que permitan a las computadoras aprender",
     "SWIFT_DESC": "Swift es un intuitivo lenguaje de programación creado por Apple que permite diseñar apps para iOS, Mac, el Apple TV y el Apple Watch.",
-    "HOME": "Inicio"
+    "HOME": "Inicio",
+    "SKILLS": "Habilidades"
 }

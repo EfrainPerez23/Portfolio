@@ -5,6 +5,8 @@ import { ComponentsRoutingModule } from './components-routing.module';
 import { InterestsComponent } from './interests/interests.component';
 import { InterestComponent } from './interests/interest/interest.component';
 import { TranslateModule } from '@ngx-translate/core';
+import { SkillsComponent } from './skills/skills.component';
+import { SkillComponent } from './skills/skill/skill.component';
 
 @NgModule({
   imports: [
@@ -12,10 +14,12 @@ import { TranslateModule } from '@ngx-translate/core';
     ComponentsRoutingModule,
     TranslateModule
   ],
-  declarations: [InterestsComponent, InterestComponent],
+  declarations: [InterestsComponent, InterestComponent, SkillsComponent, SkillComponent],
   exports: [
     InterestsComponent,
-    InterestComponent
+    InterestComponent,
+    SkillComponent,
+    SkillsComponent
   ]
 })
 export class ComponentsModule { }
