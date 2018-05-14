@@ -2,5 +2,11 @@
   "TITLE": "Software Developer",
   "MACHINE_LEARNING": "Machine Learning and Artificial Intelligence Lover!",
   "STUDENT": "System and Computing Engineer Student",
-  "PANAMANIAN": "Panamanian <i class=\"em em-flag-pa\"></i> !"
+  "PANAMANIAN": "Panamanian <i class=\"em em-flag-pa\"></i> !",
+  "INTEREST": "Interest",
+  "ANGULAR_DESC": "TypeScript-based open-source front-end web application platform led by the Angular Team at Google and by a community of individuals and corporations",
+  "SASS_DESC": "Sass is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS).",
+  "FLASK_DESC": "Flask is a micro web framework (BACK-END) written in Python and based on the Werkzeug toolkit and Jinja2 template engine.",
+  "ML_DESC": "Machine learning is a field of computer science that uses statistical techniques to give computer systems the ability to \"learn\" with data, without being explicitly programmed",
+  "SWIFT_DESC": "Swift is a robust and intuitive programming language created by Apple for building apps for iOS, Mac, Apple TV, and Apple Watch."
 }

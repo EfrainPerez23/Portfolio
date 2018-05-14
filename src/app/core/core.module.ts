@@ -10,6 +10,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CoreService } from './service/core.service';
+import { ComponentsModule } from '../components/components.module';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http);
@@ -28,6 +29,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     }),
     HttpClientModule,
     NgbModule.forRoot(),
+    ComponentsModule
   ],
   declarations: [
     NavComponent,
