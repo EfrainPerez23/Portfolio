@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Skill } from './models/skill';
 
 @Component({
   selector: 'app-skills',
@@ -7,9 +8,51 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
 
-  constructor() { }
+  private _skills: Skill[] = [
+    {
+      icon: 'fa-terminal',
+      title: 'PROGRAMMING_LANGUAGE',
+      elements: [
+        {
+          name: 'Typescript',
+          icon: '../../../../assets/img/typescript_icon.png'
+        },
+        {
+          name: 'C++',
+          icon: '../../../../assets/img/c_logo.png'
+        },
+        {
+          name: 'Git',
+          icon: '../../../../assets/img/git_icon.jpge'
+        }
+      ]
+    },
+    {
+      icon: 'fa-terminal',
+      title: 'PROGRAMMING_LANGUAGE',
+      elements: [
+        {
+          name: 'Typescript',
+          icon: '../../../../assets/img/typescript_icon.png'
+        },
+        {
+          name: 'C++',
+          icon: '../../../../assets/img/c_logo.png'
+        },
+        {
+          name: 'Git',
+          icon: '../../../../assets/img/git_icon.jpge'
+        }
+      ]
+    }
+  ];
 
-  ngOnInit() {
+  public constructor() { }
+
+  public ngOnInit(): void { }
+
+  public get skills(): Skill[] {
+    return this._skills;
   }
 
 }

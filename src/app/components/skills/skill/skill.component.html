@@ -1,3 +1,16 @@
-<p>
-  skill works!
-</p>
+<div class="element-card" [ngClass]="{'open': clicked}" (click)="onSkillClicked()">
+  <div class="front-facing">
+    <h1 class="abr">
+      <i class="fas {{skill.icon}}"></i>
+    </h1>
+    <p class="title">{{skill.title | translate}}</p>
+  </div>
+  <div class="back-facing">
+    <ul *ngFor="let element of skill.elements">
+      <li>
+          <img [src]="element.icon" [alt]="element.name" width="30" height="30">
+          <p>{{element.name}}</p>
+      </li>
+    </ul>
+  </div>
+</div>

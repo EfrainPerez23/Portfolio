@@ -1,0 +1,78 @@
+$maxWidth: 960px;
+$cardWidth: 200px;
+$cardHeight: 235px;
+$colorMain: #3498db;
+$colorMainDarker: #2980b9;
+$colorSecundary: #9b59b6;
+$colorSecundaryDarker: #9b59b6;
+.element-card {
+  position: relative;
+  width: $cardWidth;
+  height: $cardHeight;
+  transform-style: preserve-3d;
+  transform: rotatey(0deg) translatex(0px) translatey(0px);
+  transition: all 0.3s;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.4);
+  margin: 5px;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+  }
+  &.open {
+    transform: rotatey(-180deg) translatex(0px) translatey(0px);
+  }
+  .front-facing {
+    transform: rotateY( 0deg) translateZ( 2px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #ecf0f1;
+    border: 2px white solid;
+    border-radius: 5px;
+    .abr {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      font-size: 42px;
+      margin: -35px 0 0 0;
+      text-align: center;
+      color: $colorMain;
+    }
+    .title {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      font-size: 12px;
+      margin: 15px 0 0 0;
+      text-align: center;
+      color: $colorMain;
+    }
+  }
+  .back-facing {
+    transform: rotateY( 180deg) translateZ( 0px);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #ecf0f1;
+    border: 2px white solid;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+    p {
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+}

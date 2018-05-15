@@ -1,5 +1,23 @@
 @import '../../../assets/scss/colors';
+$maxWidth: 960px;
 #skills {
   width: 100%;
-  background: $purple;
+  background: #9b72e638;
+  h1 {
+    color: #281973;
+  }
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: $maxWidth;
+    min-height: 100%;
+    margin: 0px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 }

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Skill } from '../models/skill';
 
 @Component({
   selector: 'app-skill',
@@ -7,9 +8,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillComponent implements OnInit {
 
-  constructor() { }
+  private _clicked: boolean;
+  private _skill: Skill;
 
-  ngOnInit() {
+  public constructor() { }
+
+  public ngOnInit(): void { }
+
+  public get clicked(): boolean {
+    return this._clicked;
+  }
+
+  @Input('skill')
+  public set skill(skill: Skill) {
+    this._skill = skill;
+  }
+
+  public get skill(): Skill {
+    return this._skill;
+  }
+
+  public onSkillClicked(): void {
+    this._clicked = !this._clicked;
   }
 
 }

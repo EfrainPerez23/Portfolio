@@ -10,5 +10,6 @@
   "ML_DESC": "Machine learning is a field of computer science that uses statistical techniques to give computer systems the ability to \"learn\" with data, without being explicitly programmed",
   "SWIFT_DESC": "Swift is a robust and intuitive programming language created by Apple for building apps for iOS, Mac, Apple TV, and Apple Watch.",
   "HOME": "Home",
-  "SKILLS": "Skills"
+  "SKILLS": "Skills",
+  "PROGRAMMING_LANGUAGE": "Programming Languages"
 }

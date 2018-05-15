@@ -37,6 +37,6 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     HomeComponent
   ],
   exports: [HomeComponent, TranslateModule, NgbModule],
-  providers: [CoreService]
+  providers: []
 })
 export class CoreModule { }
